@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A student developer portfolio showcasing web development projects and skills.">
+  <meta name="theme-color" content="#f5f7fc">
+  <title>Vaishnavi | Student Developer</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="#home">Vaishnavi<span>.</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="theme-button" id="themeToggle" type="button" aria-pressed="false">Dark mode</button>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">STUDENT DEVELOPER</p>
+        <h1 id="hero-title">Hi, I’m <span>Vaishnavi</span>.</h1>
+        <h2>I build practical web experiences.</h2>
+        <p class="hero-description">
+          I’m learning to turn ideas into useful websites and applications.
+          Explore my work, the technologies I’m using, and get in touch below.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="#projects">View my work</a>
+          <a class="button button-outline" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <aside class="profile-card" id="about" aria-label="About me">
+        <div class="avatar" aria-hidden="true">V</div>
+        <h3>Vaishnavi</h3>
+        <p>Student Developer</p>
+        <div class="profile-tags" aria-label="Areas of interest">
+          <span>Web development</span>
+          <span>Problem solving</span>
+          <span>Learning by building</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section container" id="skills" aria-labelledby="skills-title">
+      <p class="eyebrow">WHAT I USE</p>
+      <h2 class="section-title" id="skills-title">Technologies</h2>
+      <div class="skills-grid">
+        <article class="card skill-card">
+          <h3>Frontend</h3>
+          <p>HTML, CSS, and JavaScript for responsive, interactive web pages.</p>
+        </article>
+        <article class="card skill-card">
+          <h3>Backend</h3>
+          <p>Node.js and Express for server-side routes and application logic.</p>
+        </article>
+        <article class="card skill-card">
+          <h3>Data</h3>
+          <p>MongoDB for storing application data.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="projects" aria-labelledby="projects-title">
+      <p class="eyebrow">SELECTED WORK</p>
+      <h2 class="section-title" id="projects-title">Projects</h2>
+      <div class="projects-grid">
+        <article class="card project-card">
+          <div class="project-icon" aria-hidden="true">&lt;/&gt;</div>
+          <h3>Portfolio Website</h3>
+          <p>A responsive portfolio with a theme switcher and sections for skills, projects, and contact.</p>
+          <p class="technology">HTML · CSS · JavaScript</p>
+        </article>
+        <article class="card project-card">
+          <div class="project-icon" aria-hidden="true">API</div>
+          <h3>Contact Form API</h3>
+          <p>An Express endpoint that validates contact messages, saves them to MongoDB, and sends an email.</p>
+          <p class="technology">Node.js · Express · MongoDB</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="contact" aria-labelledby="contact-title">
+      <p class="eyebrow">SAY HELLO</p>
+      <h2 class="section-title" id="contact-title">Get in touch</h2>
+      <div class="contact-grid">
+        <div class="card contact-details">
+          <h3>Let’s connect</h3>
+          <p>Have a question or want to talk about a project? Send me a message using the form.</p>
+        </div>
+        <form class="card" id="contactForm">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" maxlength="80" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" maxlength="2000" required></textarea>
+
+          <button class="button" id="submitButton" type="submit">Send Message</button>
+          <p id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Vaishnavi. All rights reserved.</p>
+  </footer>
+</body>
+</html>
